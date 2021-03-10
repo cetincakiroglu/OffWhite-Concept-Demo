@@ -7,20 +7,317 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="assets/main.css">
     <title>Off-White Concept</title>
   </head>
-  <body>
+  <body id="bootstrap-override">
+    <!-- NAVBAR STARTS -->
+    <nav class="navbar navbar-expand-lg navbar-light px-md-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/images/icons/Logo-1.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">New Arrivals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-red" href="#">Shop Man</a>
+              </li>             
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop Woman</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Special Items</a>
+              </li>             
+              <li class="nav-item">
+                <a class="nav-link" href="#">Homeware</a>
+              </li>             
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- NAVBAR ENDS -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- JUMBOTRON STARTS -->
+    <section class="container-fluid jumbotron">
+      <img class="offset-lg-1" src="assets/images/icons/Logo-2.png" alt="off-white logo">
+        <section class="row mt-5 py-md-5">
+            <section class="col-md-1 ps-4 d-lg-flex d-sm-none align-items-center">
+    
+                <ul class="d-flex flex-column">
+                    <li>
+                        <img src="assets/images/icons/instagram-icon.png" alt="instagram icon">
+                    </li>
+                    <li class="mt-5">
+                        <img src="assets/images/icons/twitter-icon.png" alt="twitter icon">
+                    </li>
+                    <li class="mt-5">
+                        <img src="assets/images/icons/vimeo-icon.png" alt="vimeo icon">
+                    </li>
+                    <li class="mt-5">
+                        <img src="assets/images/icons/soundcloud-icon.png" alt="soundcloud icon">
+                    </li>
+                </ul>
+            </section>
+            <section class="col-md-10 jumbotron-content d-lg-flex d-sm-none d-md-none justify-content-around">
+                <div class="col-md-2 align-self-end negative-b-10" >
+                    <img class="size-13" src="assets/images/products/Product-1.png" alt="...">
+                    <div class="mt-md-2">
+                        <p>Small Logo Print Bomber Jacket</p>
+                    </div>
+                  </div>
+                <div class="col-md-2 negative-t-8">
+                    <div class="mb-md-2">
+                      <p>“Off-Court" 3.0 Sneakers</p>
+                    </div>
+                    <img class="size-13" src="assets/images/products/Product-3.png" alt="...">
+                  </div>
+                <div class="col-md-2 align-self-end negative-b-5">
+                    <img class="size-13" src="assets/images/products/Product-2.png" alt="...">
+                    <div class="mt-md-2">
+                      <p>Airport Tape Sweatshirt</p>
+                    </div>
+                  </div>
+            </section>
+            <!--MOBILE DISPLAY -->
+            <section class="col-sm-12 mt-sm-5 jumbotron-content d-sm-flex flex-sm-wrap d-lg-none">
+                <div class="col-sm-6 negative-t-3" >
+                    <div class="mb-sm-3">
+                        <p>Small Logo Print Bomber Jacket</p>
+                    </div>
+                    <img class="size-12" src="assets/images/products/Product-1.png" alt="...">
+                </div>
+                <div class="col-sm-6 negative-t-5">
+                    <div class="mb-sm-3">
+                      <p>“Off-Court" 3.0 Sneakers</p>
+                    </div>
+                    <img class="size-10" src="assets/images/products/Product-3.png" alt="...">
+                </div>
+                <div class="col-sm-12 negative-b-8 text-center">
+                    <img class="size-13" src="assets/images/products/Product-2.png" alt="...">
+                    <div class="mt-sm-3">
+                      <p>Airport Tape Sweatshirt</p>
+                    </div>
+                  </div>
+            </section>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        </section>
+    </section>
+    <!-- JUMBOTRON ENDS -->
+    <!-- SCROLL -->
+    <section class="container my-5">
+        <section class="row d-flex justify-content-center">
+            <div class="col-md-4 text-center">
+                <h2 class="mb-2">SCROLL MORE</h2>
+                <img src="assets/images/icons/arrow-icon.png" alt="">
+            </div>
+        </section>
+    </section>
+    <!-- SCROLL -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
+    <!-- SECTION 1 STARTS-->
+    <section class="container-fluid">
+        <header class="row">
+            <div class="col-md-8 mt-5 p-0 offset-lg-1 offset-sm-1">
+                <p class="display-5"><span class="fw-bold">Off-White</span> was created in 2012 in Milan by American creative <span class="fw-bold">Virgil Abloh</span></p>
+            </div>
+        </header>
+        <section class="row d-flex my-5 justify-content-center">
+        <section class="col-md-10 p-0 m-0 d-flex justify-content-between flex-sm-wrap">
+
+            <article class="col-lg-4 col-sm-12">
+                <p class="mt-5 lh-lg">
+                    <span class="fw-bold">Virgil Abloh</span> (born September 30, 1980) is an American fashion designer, entrepreneur, artist, and DJ who has been the artistic director of Louis Vuitton's men's wear collection since March 2018. Abloh is also the chief executive officer of the Milan-based label <span class="fw-bold">Off-White</span>, a fashion house he founded in 2013.
+                </p>
+                <p class="mt-5 lh-lg">
+                    The men's collections include sweatshirts in technical materials, t-shirts with the iconic 'arrows' and 'diagonal' prints, versatile backpacks, and a wide selection of shoes and sneakers, including the Off-Court and 2.0, the “it shoes” of the moment. 
+                </p>
+            </article>
+            <section class="col-lg-6 col-sm-12 text-end align-self-end negative-b-5">
+                <img id="virgil-abloh" src="assets/images/products/Bitmap.png" alt="">
+            </section>
+        </section>
+        </section>
+    </section>
+    <section class="container-fluid">
+        <section class="row text-center d-flex flex-column">
+                <h2 class="display-1 my-5">"GOODS"</h2>
+                <article class="col-md-4 align-self-center">
+                    <p class="lh-lg">Young and sophisticated, Off-White offers a wide range of products including t-shirts, down jackets, belts, baby carriers, and wallets with quoted phrases.</p>
+                </article>
+        </section>
+    </section>
+    <!-- SECTION 1 ENDS-->
+
+    <!-- PRODUCTS STARTS-->
+    <section class="container-fluid">
+        <section class="row d-sm-none product-content d-lg-flex justify-content-around py-5 my-5">
+                <figure class="col-md-2 negative-t-8 d-flex text-end">
+                    <img class="size-12" src="assets/images/products/Product-7.png" alt="">
+                    <figcaption class="align-self-start">Jackets</figcaption>
+                </figure>
+                <figure class="col-md-2 d-flex align-self-end negative-l-8">
+                    <figcaption class="align-self-end
+                    ">Accessories</figcaption>
+                    <img class="size-12" src="assets/images/products/Product-5.png" alt="">
+                </figure>
+                <figure class="col-md-2 d-flex negative-t-3 text-center">
+                    <img class="size-12" src="assets/images/products/Product-6.png" alt="">
+                    <figcaption class="align-self-start">Homeware</figcaption>
+                </figure>
+                
+                <figure class="col-md-2 negative-l-8 d-flex text-center">
+                    <figcaption class="align-self-end">T-Shirts</figcaption>
+                    <img class="size-12 align-self-end" src="assets/images/products/Product-4.png" alt="">
+                </figure>
+        </section>
+    </section>
+    <section class="container-fluid my-5 py-5 d-flex d-lg-none">
+        <!-- MOBILE DISPLAY -->
+        <section class="row py-5 mt-5">
+            <figure class="col-sm-3">
+                <img class="img-fluid" src="assets/images/products/Product-4.png" alt="">
+            </figure>
+            <figure class="col-sm-3">
+                <img class="img-fluid" src="assets/images/products/Product-5.png" alt="">
+            </figure>
+            <figure class="col-sm-3">
+                <img class="img-fluid" src="assets/images/products/Product-6.png" alt="">
+            </figure>
+            <figure class="col-sm-3">
+                <img class="img-fluid" src="assets/images/products/Product-7.png" alt="">
+            </figure>
+        </section>
+    </section>
+    <!-- PRODUCTS ENDS -->
+    <div class="marquee" id="brand-line">
+        <p>- WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE </p>
+		<p class="p2"> OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF - WHITE OFF -</p>
+    </div>
+    
+    <!-- JUMBOTRON 2 -->
+    <section class="container-fluid">
+        <header class="row">
+            <div class="col-md-8 mt-5 p-0 offset-lg-2 offset-sm-1 d-flex">
+              <figure>
+                  <img src="assets/images/icons/nike-icon.png" alt="">
+              </figure>
+              <figure class="ms-4">
+                  <img src="assets/images/icons/Logo-2.png" alt="">
+              </figure>
+            </div>
+        </header>
+        <section class="row d-flex my-5 justify-content-center offset-lg-1">
+        <section class="col-md-10 p-0 m-0 d-flex  flex-sm-wrap">
+
+            <article class="col-lg-3 col-sm-12 me-md-5">
+                <p class="mt-5 lh-lg">
+                    <span class="fw-bold">Nike and Off-White:</span> "The Ten" is the ongoing sneaker collaboration between Nike and Off-White, designed by Virgil Abloh in 2017. 
+                </p>
+                
+                <p class="mt-5 lh-lg">
+                
+                    It initially involved the deconstruction of ten iconic Nike silhouettes by Abloh. The ten shoes were individually broken down by Abloh, and then rebuilt with a different design and rearranged components.
+                </p>
+            </article>
+            <article class="col-lg-3 ms-md-5 col-sm-12">
+                <p class="mt-5 lh-lg">
+                    The collaboration sold out and the shoes became highly sought after. Further additions to this collaboration were then added throughout 2018 and 2019 which included endorsements from athletes and celebrities.
+                </p>
+             
+            </article>
+        </section>
+        </section>
+    </section>
+    <!-- JUMBOTRON 2 ENDS -->
+
+    <!-- PRODUCTS 2 STARTS -->
+    <section class="container-fluid position-relative">
+        <figure class="background-2">
+            <img src="assets/images/bg-objects/bg-object-3.png" alt="">
+            <img src="assets/images/bg-objects/bg-object-3.png" alt="">
+            <img src="assets/images/bg-objects/bg-object-3.png" alt="">
+            <img src="assets/images/bg-objects/bg-object-3.png" alt="">
+        </figure>
+        <section class="row">
+            <section class="col-md-5 mx-auto d-flex justify-content-between">
+                <figure class="shoes shoes-1">
+                    <img class="img-fluid" src="assets/images/products/Product-8.png" alt="">
+                </figure>
+                <figure class="shoes shoes-2 align-self-end">
+                    <img class="img-fluid" src="assets/images/products/Product-9.png" alt="">
+                </figure>
+            </section>
+        </section>
+        <section class="row mx-auto">
+            <section class="col-md-3 mx-auto">
+                <figure class="shoes shoes-3">
+                    <img class="img-fluid" src="assets/images/products/Product-11.png" alt="">
+                </figure>
+            </section>
+        </section>
+    </section>
+</section>
+    <footer class="container-fluid">
+        <section class="row d-flex justify-content-between border-top mt-5">
+            <section class="col-md-3 mt-5 d-flex flex-column justify-content-between">
+                <figure>
+                    <img src="assets/images/icons/Logo-1.png">
+                </figure>
+                <section class="col mt-5 d-flex justify-content-between">
+                    <ul>
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Shop Man</a></li>
+                        <li><a href="">Shop Woman</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Special Items</a></li>
+                        <li><a href="">Homeware</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </section>
+            </section>
+            <section class="col-md-4 d-flex flex-column justify-content-between mt-5">
+                <article class="col d-flex justify-content-around">
+                    <ul class="me-3">
+                        <li><a href="">Customer Service</a></li>
+                        <li><a href="">Site Policy</a></li>
+                        <li><a href="">Privacy & Cookie Policy</a></li>
+                        <li><a href="">Regulatory Framework</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Shipping & Returns</a></li>
+                        <li><a href="">Payment Methods</a></li>
+                        <li><a href="">Cookie Preferences</a></li>
+                        <li><a href="">Accessibility</a></li>
+                        <li><a href="">Legal</a></li>
+                    </ul>
+                </article>
+                <article class="col mt-5 d-flex justify-content-evenly">
+                    <span class="text-muted">© 2020 Off-White™</span>
+                    <span class="text-muted">All rights reserved.</span>
+                </article>
+
+            </section>
+        </section>
+        <section class="row mt-5 mb-2 footer-bg">
+
+        </section>
+    </footer>
+
+        
+
+    <!-- PRODUCTS 2 ENDS -->
+  
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
+
   </body>
 </html>
