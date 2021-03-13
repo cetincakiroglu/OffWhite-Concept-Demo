@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -311,7 +312,7 @@ table {
   height: 325px;
 }
 
-.marquee {
+.marquee2 {
   background-color: #fff;
   margin: 150px 0px;
   height: 50px;
@@ -319,7 +320,7 @@ table {
   position: relative;
 }
 
-.marquee p {
+.marquee2 p {
   color: #000 !important;
   position: absolute;
   width: 100%;
@@ -333,7 +334,7 @@ table {
   animation: scroll-left 20s linear infinite;
 }
 
-.marquee .p2 {
+.marquee2 .p2 {
   animation-delay: 10s;
 }
 
@@ -356,21 +357,6 @@ table {
   z-index: 2;
 }
 
-.background-2 {
-  position: absolute;
-  top: 30%;
-}
-
-.background-2 img {
-  width: 100%;
-  margin: 7px 0px;
-  z-index: 1;
-}
-
-.background-2 img:nth-child(2) {
-  transform: translateX(-40%);
-}
-
 footer {
   width: 95% !important;
 }
@@ -390,12 +376,83 @@ footer .footer-bg {
   background-size: cover;
 }
 
-@keyframes scroll-left {
+:export {
+  marqueeWidth: 100vw;
+  marqueeHeight: 5vh;
+  marqueeElements: 10;
+  marqueeElementWidth: calc(($marquee-width) / ($marquee-elements-displayed));
+}
+
+.marquee-wrapper {
+  position: relative;
+}
+
+.marquee, .marquee-1 {
+  width: 100vw;
+  height: 5vh;
+  overflow: hidden;
+}
+
+.marquee-content, .brand-marquee {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.marquee-content li > img, .brand-marquee li > img {
+  width: 5vw;
+  flex-shrink: 0;
+}
+
+.marquee-content li, .brand-marquee li {
+  white-space: nowrap;
+  justify-content: center;
+  width: calc(($marquee-width) / ($marquee-elements-displayed));
+  flex-shrink: 0;
+  align-items: center;
+}
+
+#marquee-container-2 {
+  position: absolute;
+  top: 27%;
+}
+
+.marquee-1 {
+  background-color: #fff;
+}
+
+.brand-marquee li {
+  position: relative;
+  font-size: 1.2rem;
+  width: 10vw;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.brand-marquee li h2 {
+  color: #000 !important;
+  font-weight: 700;
+}
+
+.brand-name:before {
+  content: '';
+  width: 15px;
+  border: 1px solid black;
+  transform: rotateY(45deg);
+  position: absolute;
+  top: 43%;
+  right: 13%;
+}
+
+@keyframes scroll {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0vw);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translate(calc(-1*5vw*20));
   }
 }
 /*# sourceMappingURL=main.css.map */

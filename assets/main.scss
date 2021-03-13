@@ -6,6 +6,12 @@ $font-main:'Aktiv Grotesk';
 $primary-color:#fff;
 $bg-color:#000;
 $active-color:#FF3D00;
+
+$marquee-width: 100vw;
+$marquee-height: 5vh;
+$marquee-elements: 10;
+$marquee-elements-displayed:20;
+$marquee-element-width: calc(($marquee-width) / ($marquee-elements-displayed));
 /*RESET*/
 
 html, body, div, span, applet, object, iframe,
@@ -35,6 +41,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	overflow-x:hidden;
 }
 ol, ul {
 	list-style: none;
@@ -140,13 +147,12 @@ $sizeamounts:(8,9,10,11,12,13);
 	height:325px;
 }
 
-.marquee{
+.marquee2{
 	background-color:$primary-color;
 	margin: 150px 0px;
 	height: 50px;
 	overflow: hidden;
 	position: relative;	
-
 	p {
 	   color:$bg-color !important;
 	   position: absolute;
@@ -189,19 +195,6 @@ $sizeamounts:(8,9,10,11,12,13);
 	z-index:2;
 }
 
-.background-2{
-	position:absolute;
-	top:30%;
-	img{
-		width:100%;
-		margin:7px 0px;
-		z-index:1;
-		&:nth-child(2){
-			transform:translateX(-40%)
-		}
-	}
-}
-
 footer{
 	width:95% !important;
 	ul>li{
@@ -218,34 +211,87 @@ footer{
 	}
 }
 
+$marquee-width: 100vw;
+$marquee-height: 5vh;
+$marquee-elements: 10;
 
-@-moz-keyframes scroll-left {
-	0% {
-		-moz-transform: translateX(100%);
-	}
-	100% {
-		-moz-transform: translateX(-100%);
+
+:export{
+    marqueeWidth : $marquee-width;
+    marqueeHeight: $marquee-height;
+    marqueeElements: $marquee-elements;
+    marqueeElementWidth: $marquee-element-width;
+}
+
+.marquee-wrapper{
+	position:relative;
+}
+
+.marquee, .marquee-1{
+    width:$marquee-width;
+    height:$marquee-height;
+    overflow:hidden;
+}
+
+.marquee-content, .brand-marquee{
+    list-style: none;
+    height:100%;
+    display:flex;
+    animation: scroll 10s linear infinite;
+    li>img{
+        width:5vw;
+        flex-shrink:0;
+    }
+    li{
+        white-space:nowrap;
+        justify-content: center;
+        width:$marquee-element-width;
+        flex-shrink: 0;
+        align-items: center;
+    }
+    
+}
+
+#marquee-container-2{
+	position:absolute;
+	top:27%;
+}
+.marquee-1{
+	background-color:#fff;
+
+}
+.brand-marquee{
+      
+	li{
+		position:relative;
+		font-size:1.2rem;
+		width:10vw;
+		flex-shrink:0;
+		align-items:center;
+		justify-content:center;
+		padding:10px 0px;
+		h2{
+			color:#000 !important;
+			font-weight:700;
+		}
 	}
 }
 
-@-webkit-keyframes scroll-left {
-	0% {
-		-webkit-transform: translateX(100%);
-	}
-	100% {
-		-webkit-transform: translateX(-100%);
-	}
+.brand-name:before{
+	content:'';
+	width:15px;
+	border:1px solid black;
+	transform:rotateY(45deg);
+	position:absolute;
+	top:43%;
+	right:13%;
 }
 
-@keyframes scroll-left {
-	0% {
-		-moz-transform: translateX(100%);
-		-webkit-transform: translateX(100%);
-		transform: translateX(100%);
-	}
-	100% {
-		-moz-transform: translateX(-100%);
-		-webkit-transform: translateX(-100%);
-		transform: translateX(-100%);
-	}
+
+
+@keyframes scroll{
+    0%{transform:translateX(0vw)}
+    100%{transform:translate(calc(-1*5vw*20))}
 }
+
+
