@@ -1,0 +1,82 @@
+
+$marquee-width: 100vw;
+$marquee-height: 5vh;
+$marquee-elements: 10;
+
+
+:export{
+    marqueeWidth : $marquee-width;
+    marqueeHeight: $marquee-height;
+    marqueeElements: $marquee-elements;
+    marqueeElementWidth: $marquee-element-width;
+}
+
+.marquee-wrapper{
+	position:relative;
+}
+
+.marquee, .marquee-1{
+    width:$marquee-width;
+    height:$marquee-height;
+    overflow:hidden;
+}
+
+.marquee-content, .brand-marquee{
+    list-style: none;
+    height:100%;
+    display:flex;
+    animation: scroll 10s linear infinite;
+    li>img{
+        width:5vw;
+        flex-shrink:0;
+    }
+    li{
+        white-space:nowrap;
+        justify-content: center;
+        width:$marquee-element-width;
+        flex-shrink: 0;
+        align-items: center;
+    }
+    
+}
+
+#marquee-container-2{
+	position:absolute;
+	top:35%;
+}
+.marquee-1{
+	background-color:#fff;
+	height:4.5vh;
+
+}
+.brand-marquee{
+      
+	li{
+		position:relative;
+		font-size:1.2rem;
+		width:10vw;
+		flex-shrink:0;
+		align-items:center;
+		justify-content:center;
+		padding:10px 0px;
+		h2{
+			color:#000 !important;
+			font-weight:800;
+		}
+	}
+}
+
+.brand-name:before{
+	content:'';
+	width:15px;
+	border:1px solid black;
+	transform:rotateY(45deg);
+	position:absolute;
+	top:49%;
+	right:10%;
+}
+
+@keyframes scroll{
+    0%{transform:translateX(0vw)}
+    100%{transform:translate(calc(-1*5vw*20))}
+}

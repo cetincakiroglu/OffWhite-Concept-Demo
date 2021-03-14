@@ -1,0 +1,17 @@
+
+.jumbotron{
+	margin:10% auto;
+}
+.jumbotron-content{
+	background-image:url(../images/bg-objects/bg-object-3.png);
+	background-repeat:no-repeat;
+	background-size: cover;
+	height:600px;
+	img{
+		border-radius:0;
+	}
+	div{
+		margin-left:0;
+		padding-left:0;
+	}
+}

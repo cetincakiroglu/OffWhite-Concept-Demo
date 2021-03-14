@@ -1,0 +1,26 @@
+#bootstrap-override{
+    background-color:$bg-color;
+	font-family: $font-main;
+	font-size:16px;
+
+	h1,h2,h3,h4,h5,h6,p,a,li,span,figcaption{
+		color:$primary-color;
+	}
+	p,a,li,span{
+		font-weight:normal;
+	}
+	sup{
+		font-size:16px !important;
+		color:#fff;
+	}
+	.navbar-toggler{
+		color:$bg-color;
+		background-color: $primary-color;
+	}
+	.navbar-toggler-icon{
+		background-color: $primary-color;
+	}
+	.bg-red{
+		background-color:$active-color;
+	}
+}
