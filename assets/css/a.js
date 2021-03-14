@@ -1,1 +1,0 @@
-import '../images/bg-objects/'

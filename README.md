@@ -1,17 +1,24 @@
 # OffWhite-Concept-Demo
 
-TODO: Add media queries, make it good in mobile.
+This is a demo project of Off-White Concept website.
 
-TODO: Make it cross-browser compatible.
+Designer of the project is **Mario Simic**. Special thanks to Mario for letting me code his design.
 
-TODO: Get rid of d-none d-block.
+Don't forget to check out other awesome designs by Mario.
+- [instagram](@ui_dude)
+- [dribbble](https://dribbble.com/mario-simic)
 
-TODO: Seperate scss files, make it modular.
-    - Animations
-    - Marquees
-    - Spacing
-    - Config
-    - Utils
-    - Text
+Developed by **Çetin Çakıroğlu**.
 
-TODO: Revise JS, make it more readable.
+#### Technologies Used:
+
+- HTML
+- Bootstrap v5
+- SCSS
+- CSS3 Animations
+- Vanilla JavaScript
+
+[Demo Link]()
+#### Project Image
+
+![Demo Image](./assets/images/Project-images/screenshot.png)
